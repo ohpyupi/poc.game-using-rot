@@ -1,0 +1,25 @@
+{
+  "name": "poc.game-using-rot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "nodemon": "nodemon index.js",
+    "start:dev": "concurrently \"npm run nodemon\" \"npm run build:watch\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-es6-template-engine": "^2.2.3",
+    "rot-js": "^2.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
