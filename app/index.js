@@ -9,6 +9,10 @@ const {
 const game = new Game({
     width: 40,
     height: 20,
+    screenWidth: 40,
+    screenHeight: 20,
+    mapWidth: 500,
+    mapHeight: 500, 
 });
 
 const bootstrap = () => {

@@ -1,6 +1,7 @@
 const ROT = require('rot-js');
 
 const Game = function(options = {}) {
+    this.options = options;
     this.display = null;
     this.currentScreen = null;
     this.screenMap = {};
@@ -20,6 +21,8 @@ Game.prototype._bindEventToScreen = function _bindEventToScreen(eventType) {
             return;
         }
         this.currentScreen.handleInput(this, eventType, event);
+        this.display.clear();
+        this.currentScreen.render(this);
     });
 };
 
